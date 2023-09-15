@@ -1,0 +1,12 @@
+# elimina le regole precendenti
+RewriteEngine On
+
+# prendi soltanto dallo slash in poi
+RewriteBase /
+
+# se ti sto richiedendo un file o una directory va bene, prendilo
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# preso tutto quanto richiama controller.php e passagli come parametro quello che hai preso alla riga 5
+RewriteRule ^(.+)$ server/controller.php [QSA,L]
