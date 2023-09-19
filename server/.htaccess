@@ -1,0 +1,2 @@
+# togliendo il commento alla riga 2 si può fare in modo che il server non accetti nessuna richiesta a un file presente nella cartella server
+# Deny from all

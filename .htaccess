@@ -1,3 +1,4 @@
+# funzionerà solo se il file .htaccess è nella cartella htdocs e non in una sottocartella
 # elimina le regole precendenti
 RewriteEngine On
 
